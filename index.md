@@ -1,4 +1,4 @@
-﻿\# Privacy \& Data Handling Policy
+﻿
 
 \*\*Effective Date:\*\* September 2025
 
@@ -72,23 +72,21 @@ This Privacy \& Data Handling Policy describes how our organization ("we", "our"
 
 In the event of unauthorized access or breach:
 
-1\. The affected system is isolated from the network.  
+1\. The affected system is isolated from the network.
 
-2\. Credentials are rotated immediately.  
+2\. Credentials are rotated immediately.
 
-3\. Logs are reviewed to identify scope.  
+3\. Logs are reviewed to identify scope.
 
-4\. Stakeholders, including Amazon, are notified at \*\*security@amazon.com\*\* as required.  
+4\. Stakeholders, including Amazon, are notified at \*\*security@amazon.com\*\* as required.
 
-5\. The system is re-imaged and security controls are strengthened.  
+5\. The system is re-imaged and security controls are strengthened.
 
 
 
 \## Contact
 
-Questions regarding this policy can be directed to:  
+Questions regarding this policy can be directed to:
 
 \*\*Email:\*\* derrickdotson@protonmail.com
-
-
 
