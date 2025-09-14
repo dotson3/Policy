@@ -1,4 +1,4 @@
-﻿
+﻿# Privacy & Data Handling Policy
 **Effective Date:** September 2025
 
 This Privacy & Data Handling Policy describes how our organization (“we”, “our”, “us”) manages **Amazon Information** when operating our order fulfillment automation with Essendant.
