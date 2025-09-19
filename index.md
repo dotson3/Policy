@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -118,7 +118,4 @@
     <h2>12) Changes</h2>
     <p>We may update this Policy to reflect system or policy changes. Effective date will be updated and material changes highlighted.</p>
     <p><strong>Contact:</strong> derrickdotson@protonmail.com • 
-  </section>
-</div>
-</body>
-</html>
+
