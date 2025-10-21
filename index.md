@@ -53,7 +53,7 @@ No marketing, unrelated analytics, profiling, or resale.
 ---
 
 ### 7) Vulnerability & Change Management
-- **Continuous Scanning:** Dependency and package scans (e.g., \pip-audit\) are run before each release, and daily rootkit checks (e.g., \khunter\) verify host integrity.  
+- **Continuous Scanning:** Dependency and package scans (e.g., `pip-audit`\) are run before each release, and daily rootkit checks (e.g., \`rkhunter`\) verify host integrity.  
 - **Remediation Tracking:** Vulnerabilities identified through scans or penetration tests are ticketed and tracked from discovery to closure.  
 - **Remediation Timelines:** Critical – 7 days; High – 14 days; Medium – 30 days; Low – 90 days.  
 - **Verification:** Each fix is verified by re-scan or code review before closure; unresolved critical items trigger automatic escalation to the system administrator.  
