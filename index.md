@@ -68,16 +68,11 @@
   </section>
 
   <section id="security">
-    <h2>5) Security Controls</h2>
-    <ul>
-      <li>In transit: TLS 1.2+; At rest: encrypted disks (AES-256).</li>
-      <li>Access: unique accounts, least-privilege, quarterly reviews; key-based SSH with passphrases; MFA where supported.</li>
-      <li>Network: firewall (deny-by-default), Fail2ban, no public DB exposure.</li>
-    </ul>
-  </section>
+    ## 5) Security Controls
 
-  <section id="logging">
-    <h2>6) Logging & Monitoring</h2>
+All Amazon Information is encrypted in transit using TLS 1.2 or higher and encrypted at rest using AES-256 to ensure confidentiality and integrity. Access to systems handling Amazon Information is restricted to unique, least-privilege accounts that are reviewed quarterly. All administrative and service account passwords must be at least twelve characters long and contain uppercase and lowercase letters, numbers, and special characters. Passwords expire every ninety days and cannot be reused from the previous five password cycles. Accounts are automatically locked for fifteen minutes after five consecutive failed login attempts, and all passwords are stored only as PBKDF2-HMAC-SHA256 hashes with unique salts; plaintext storage is prohibited. These password and authentication requirements are enforced through PAM on Linux hosts and application-level validation for service accounts. SSH access requires key-based authentication with passphrases, and multi-factor authentication (MFA) is required for all human accounts with access to Amazon Information and enabled wherever supported. Network security follows a deny-by-default firewall configuration with Fail2ban intrusion prevention, no public database exposure, and continuous monitoring with daily log reviews and automated alerts to detect unauthorized or abnormal activity.
+
+<h2>6) Logging & Monitoring</h2>
     <ul>
       <li>Logs are <strong>redacted</strong> (no PII/secrets); retained ≥ 90 days.</li>
       <li>Automated alerts for critical events; host intrusion/brute-force protection and daily reviews.</li>
@@ -85,17 +80,11 @@
   </section>
 
   <section id="vuln">
-    <h2>7) Vulnerability & Change Management</h2>
-    <ul>
-      <li>Dependency scans (e.g., pip-audit) and security review before release; blocking policy for critical/high issues.</li>
-      <li>Daily rootkit checks (e.g., rkhunter); prompt OS/package patching.</li>
-      <li>Vulnerability scans ≥ every 180 days; penetration test annually; tracked SLAs: Critical 24–72h, High 7d, Medium 30d, Low 90d.</li>
-      <li>Changes tested in staging; approval + rollback plan required.</li>
-    </ul>
-  </section>
+    ## 7) Vulnerability & Change Management
 
-  <section id="ir">
-    <h2>8) Incident Response</h2>
+The system employs continuous vulnerability management to maintain a secure operating environment. All dependencies are scanned before each release using tools such as pip-audit, and daily rootkit checks are performed with rkhunter to detect tampering or unauthorized modifications. Vulnerabilities discovered through automated scans, package audits, or penetration tests are logged and tracked from discovery to closure using an internal ticketing process. Each issue is assigned a severity rating with defined remediation timelines: critical vulnerabilities are remediated within seven days, high-severity findings within fourteen days, medium-severity findings within thirty days, and low-severity findings within ninety days. Every remediation is verified by re-scan or code review before closure, and any unresolved critical issue triggers an automatic escalation to the system administrator. Comprehensive vulnerability scans occur at least every one-hundred-eighty days, with penetration testing performed annually. All system changes follow a structured change-control process that includes staging-environment testing, documented approval, and rollback planning before production deployment.
+
+<h2>8) Incident Response</h2>
     <p>Detect → contain → eradicate → recover → post-mortem. We notify <code>security@amazon.com</code> of any confirmed incident involving Amazon Information within 24 hours and provide updates as required.</p>
   </section>
 
@@ -121,4 +110,4 @@
 
 
 
-<sub>Last updated: 2025-10-21 01:23 UTC</sub>
+<sub>Last updated: 2025-10-21 01:34 UTC</sub>
